@@ -1,0 +1,27 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{styling/report_dependencies} % Bring in all the includes and Latex Utils
+
+\begin{document}
+    \include{sections/preamble.tex}
+
+    \include{sections/project_description.tex}
+
+    \include{sections/project_deliverables.tex}
+
+    \include{sections/project_plan.tex}
+
+    \include{sections/project_resources.tex}
+
+    % References
+    \small
+    % Tell TexCount to ignore words in word count
+    %TC:ignore
+    \addcontentsline{toc}{section}{References}
+    \bibliography{sections/references.bib}
+    % Tell TexCount to start counting words again
+    %TC:endignore
+    \normalsize
+
+    \include{sections/appendix.tex}
+
+\end{document}

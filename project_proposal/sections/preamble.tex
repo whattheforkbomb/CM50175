@@ -1,0 +1,64 @@
+% Cover-page (Group Contributions)
+% Title \& Authors
+% ToC, ToF, ToT (Document Navigation Tables)
+% Anything else?
+
+% Tell TexCount to ignore words in word count
+%TC:ignore
+\pagenumbering{gobble} % Don't track page numbers prior to Table of Contents
+\thispagestyle{empty} % Remove Page Styling prior to Table of Contents
+\newgeometry{inner=0.2\textwidth,outer=0.2\textwidth}
+
+% Setup title
+\title{Investigating Possible Mobile Device Interaction Approaches Through Combining User Gaze \& Tracking Lateral Movement of Mobile Device Using User's Face as Reference Frame}
+% Can this be polished?
+
+\renewcommand\maketitlehookb{\centering \Large CM50175 - Project Proposal}
+\date{\today}
+\author{
+    % Authors
+    \textbf{Author:}\\
+    Whiffing, James\\
+    Department of Computer Science\\
+    University of Bath\\
+    Bath, BA2 7AY \\
+    \textit{jw2304@bath.ac.uk} \\
+    \and
+    \textbf{Supervisor:}\\
+    Clarke, Christopher\\
+    Department of Computer Science\\
+    University of Bath\\
+    Bath, BA2 7AY \\
+    \textit{cjc234@bath.ac.uk} \\
+}
+
+\maketitle
+
+\clearpage
+\restoregeometry
+\newpage
+
+\setcounter{page}{0}
+\pagenumbering{roman}
+\pagestyle{fancy}
+
+%% Content Lists %%
+
+\tableofcontents
+\clearpage
+\newpage
+\addcontentsline{toc}{section}{\listfigurename}
+\listoffigures
+\clearpage
+\newpage
+\addcontentsline{toc}{section}{\listtablename}
+\listoftables
+\clearpage
+\newpage
+
+% Tell TexCount to start counting words again
+%TC:endignore
+
+% Reset Page Styling and numbering for rest of doc
+\setcounter{page}{1}
+\pagenumbering{arabic}
