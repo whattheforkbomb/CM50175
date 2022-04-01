@@ -17,6 +17,31 @@
 %   Works exist in the space, but limited to head orientation, or specialised hardware (?) Will expand upon, maybe focus on application of techniques?
 % Proof or related investigations regarding above?
 
-% What would be considered a success?
-%   What are the core goals, 
-%   what would be the stretch goals
+% tracking lateral movement of phone using user’s head/face as landmark, with the intention to combine this with user gaze for interaction with mobile device
+
+% Intro, smartphone vs dumbphone and the adaption of touchscreens (also on tablets)
+Current SHDs don't typically utilise additional modes of interaction that such devices have to offer. Most interactions with SHDs are performed though the touch-screen, with only specific apps/functions utilising additional modes of input\footnote{
+    e.g. Map/Navigation Apps - Device Orientation/Movement, 
+    Smart Assistant Apps - User Voice,
+    Parallax Wallpapers - Device Orientation
+}.
+Though the touchscreen is intuitive and can accept gestures beyond finger-presses, it does face some limitations.
+
+It is common for a user to hold a smartphone with one-hand, such that they interact with the screen with just their thumb. This is supported by the introduction/support for one-handed keyboards (keys pushed to the side closer to the hand), and one-handed modes \citep{samsung2021onehand}.\\
+There is also active research in developing techniques to allow the user to interact with the whole display, with just their thumb \citep{hakka2020design}, which they then followed-up with using non-standard hardware \citep{ikeda2021hover}.
+
+
+An alternative approach to adding gestures to the thumb, or requiring new hardware, is outlined by \cite{voelker2020headreach}, which looks to use the user's head orientation to select the region within which to place a cursor, which the user can then move with their thumb.
+\cite{hueber2020headbang} then extended upon this by providing a 'selection-wheel', which highlights a segment of the wheel based on the orientation of the head.\\
+These techniques were developed with the aim to enhance the user's reachability to all parts of the screen.
+However with head-tracking there are other ways within which the user's interaction with the device can be enhanced.
+
+
+Two ways the user experience can be further enhanced involve either: extending application functionality to support head gestures \citep{lopez2012head}; or adapting the user interface to the user's perspective,with respect to the device display \citep{francone2011using}.\\
+In the former, orientation and distance of the user's head, with respect to the display, is used to adjust hide and show application functionality (such as a bookmarks bar in a browser).\\
+The latter making the interface itself 3D, and rendering the appropriate view based on the user's perspective, such that by moving their head they could either see more within an app, or 'preview' what is present on the next/previous page.
+\\\\
+This project aims to build upon the works described above.\\
+It shall involve investigating/developing techniques for tracking the lateral and rotational movement of a smart handheld device (SHD)\footnote{e.g. smart-phones and tablets.}, which could be combined with user gaze, to permit additional gestures with which the user can interact with the device.\\
+We shall then build an interface for a SHD with which the interaction mode described above can be used to enhance the user's interaction with the device.\\
+This interface can then be evaluated to determine if there is any gained usability to a SHD with the above interaction modes, how comfortable the interaction modes are, and to evaluate the performance of the head/gaze tracking capabilities (potentially comparing them with existing systems).
