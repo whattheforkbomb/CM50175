@@ -3,53 +3,67 @@
 % Agile approach, loose deadlines, but ideally more frequent iterations
 %   Slow sections on research and writing, but can start development alongside these sections, and once tracking / gesture recognition sorted can start developing frequent prototypes for interface for testing
 
+For the execution of the work required for this project an Agile development strategy will be employed.\\
+As such milestones / deliverables will not have specific dates/times\footnote{Unless a specified submission date/time has been provided for the course. These will be provided in YYYY/MM/DD format.}. Instead the Project Plan will primarily indicate the order within which work shall be completed, with start/end dates provided with respect to when in the month it will be expected\footnotemark[3].\\
+The overlap between the end of the design sections, the start of their respective development sections, and the start of the write-up sections are to indicate that these can be performed to some extent in parallel. 
+While researching a topic, the write-up can be started (documenting what is being researched), as can the development and testing of the relevant code.\\
+This avoids scenarios where the next section is unable to be started while waiting for 'all' the research to be performed ahead of time.
+Research and development can be much more responsive, resulting in less wasted time, and allowing more flexibility in the order/effort work is completed in/with.
+
 % What items can be dropped if timeline an issue?
 % What are the deadlines set for the milestones?
 % When can each item be started, what is being worked on in parallel?
 
-\begin{notes}
-    \begin{enumerate}
-        \item \label{itm:research} Research \& Design
-            \begin{enumerate}
-                \item \label{itm:lit_review_draft} Literature Review \textit{- 1\textsuperscript{st} Draft}
-                \item \label{itm:tracking_design} Head/Gaze Tracking research and design 
-                \item \label{itm:gesture_design} Gesture Recognition research and design 
-                \item \label{itm:interface_design} Initial Designs For 3D Interface
-            \end{enumerate} 
-        \item \label{itm:development} Development
-            \begin{enumerate}
-                \item \label{itm:head_tracking} Head Tracking
-                    % Tracking head to determine relative position of the phone
-                \item \label{itm:gaze_tracking} Gaze Tracking
-                    % Tracking user gaze (map to point/region on screen)
-                \item \label{itm:gesture_recognition} Gesture Recognition
-                    % Recognising specific movements of phone + gaze location
-                \item \label{itm:interface} Interface Prototyping
-                    % Developing prototype interfaces on a mobile device for evaluation
-            \end{enumerate}
-        \item \label{itm:testing} Testing \& Evaluation
-            \begin{enumerate}
-                \item \label{itm:performance} Evaluating Tracking Performance \\
-                    Raw Performance (how accurate is it)\\
-                    Comparison to existing techniques (taking note of difference in approach, may not be 1-1 evaluation possible)
-                \item \label{itm:usability} Usability Study
-            \end{enumerate}
-        \item \label{itm:report} Writing the Report
-            \begin{enumerate}
-                \item \label{itm:lit_review_final} Literature Review \textit{- Final Draft}
-                \item \label{itm:design_write} Design Write-up
-                    % Designs and additional research 
-                \item \label{itm:dev_write} Development Write-up
-                    % Development (successes, failures, etc...) 
-                \item \label{itm:eval_write} Evaluation Write-up
-                    % Results, Testing, Evaluation
-                \item \label{itm:conclusion_write} Conclusions \& Further Work
-                    % Changes made, was it a success, how could this be used and extended.
-                \item \label{itm:abstract_and_intro_write} Abstract \& Introduction
-                    % Summary of the paper, and introduction to what the paper will discuss
-            \end{enumerate}
-    \end{enumerate}
-\end{notes}
+\begin{enumerate}
+    \item \label{itm:research} \textbf{Research - 2022/04/02 $\rightarrow$ Beginning of August 2022}
+        \begin{enumerate}
+            \item \label{itm:tracking_design} \textbf{Head/Gaze Tracking research - 2022/04/02 $\rightarrow$ Beginning of July 2022}
+            \item \label{itm:gesture_design} \textbf{Gesture Recognition research - 2022/04/02 $\rightarrow$ Middle of July 2022}
+            \item \label{itm:interface_design} \textbf{Head/Gaze Interfaces - 2022/04/02 $\rightarrow$ Beginning of August 2022}
+            \item \label{itm:lit_review_draft} \textbf{Literature Review - 2022/04/02 $\rightarrow$ 2022/05/06}\\
+                \textbfit{Dependent on: \ref{itm:tracking_design}, \ref{itm:gesture_design}, \& \ref{itm:interface_design}}\footnote{Though dependencies can be finished later than this draft is submitted, they must be started prior.}\\
+                1\textsuperscript{st} Draft of the literature review
+        \end{enumerate}
+    \item \label{itm:development} \textbf{Development - 2022/05/06 $\rightarrow$ Beginning of August 2022}
+        \begin{enumerate}
+            \item \label{itm:head_tracking} \textbf{Head Tracking - 2022/05/06 $\rightarrow$ Middle of July}\\
+                \textbfit{Dependent on: \ref{itm:tracking_design}}
+            \item \label{itm:gaze_tracking} \textbf{Gaze Tracking - End of May 2022 $\rightarrow$ Middle of July 2022}\\
+                \textbfit{Dependent on: \ref{itm:tracking_design}}
+            \item \label{itm:gesture_recognition} \textbf{Gesture Recognition - Beginning of June 2022 $\rightarrow$ Middle of July 2022}\\
+                \textbfit{Dependent on: \ref{itm:gesture_design}}
+            \item \label{itm:interface} \textbf{Interface Prototyping - Middle of June 2022 $\rightarrow$ Beginning of August 2022}\\
+                \textbfit{Dependent on: \ref{itm:interface_design}, \ref{itm:gesture_recognition}, \ref{itm:gaze_tracking}, \& \ref{itm:head_tracking}\footnotemark[4]}
+        \end{enumerate}
+    \item \label{itm:testing} \textbf{Testing \& Evaluation - End of June 2022 $\rightarrow$ Middle of August 2022}
+        \begin{enumerate}
+            \item \label{itm:performance} \textbf{Evaluating Tracking and Gesture Recognition Performance - End of June 2022 $\rightarrow$ Middle of August 2022}\\
+                \textbfit{Dependent on: \ref{itm:head_tracking}, \ref{itm:gaze_tracking}, \& \ref{itm:gesture_recognition}}
+            \item \label{itm:usability} \textbf{Usability Study - End of July 2022 $\rightarrow$ Middle of August 2022}\\
+                \textbfit{Dependent on: \ref{itm:interface}}
+        \end{enumerate}
+    \item \label{itm:report} \textbf{Writing the Report - 2022/04/02 $\rightarrow$ Beginning of September 2022}
+        \begin{enumerate}
+            \item \label{itm:lit_review_final} \textbf{Literature Review - 2022/05/06  $\rightarrow$ Beginning of August 2022}\\
+                \textbfit{Dependent on: \ref{itm:research}}\\
+                Final Draft of the literature review.
+            \item \label{itm:design_write} \textbf{Design Write-up - 2022/05/06  $\rightarrow$ Beginning of August 2022}\\
+                \textbfit{Dependent on: \ref{itm:research}, \& \ref{itm:development}}
+                % Designs and additional research 
+            \item \label{itm:dev_write} \textbf{Development Write-up - 2022/05/06  $\rightarrow$ End of August 2022}\\
+                \textbfit{Dependent on: \ref{itm:development}}
+                % Development (successes, failures, etc...) 
+            \item \label{itm:eval_write} \textbf{Evaluation Write-up - 2022/05/06  $\rightarrow$ End of August 2022}\\
+                \textbfit{Dependent on: \ref{itm:testing}}
+                % Results, Testing, Evaluation
+            \item \label{itm:conclusion_write} \textbf{Conclusions \& Further Work - 2022/05/06  $\rightarrow$ End of August 2022}\\
+                \textbfit{Dependent on: \ref{itm:testing}}
+                % Changes made, was it a success, how could this be used and extended.
+            \item \label{itm:abstract_and_intro_write} \textbf{Abstract \& Introduction - End of August 2022  $\rightarrow$ Beginning of September 2022}\\
+                \textbfit{Dependent on: \ref{itm:conclusion_write}}
+                % Summary of the paper, and introduction to what the paper will discuss
+        \end{enumerate}
+\end{enumerate}
 
 % Gantt Chart showing plausible deadlines and milestones
 %   Not too specific and fairly broad (maybe overlapping sections to account for unknown time for deliverables)
