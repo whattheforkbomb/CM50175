@@ -1,0 +1,29 @@
+Lit review:
+    [ ] Head-Tracking
+     \-[ ] Tracking head vs phone - do any such tools exist, e.g. do existing tools care if user or phone is moving, or do they just care about relative positioning?
+    
+    [ ] Mobile Eye Tracking
+     |-[ ] Detection of user viewing screen, Vs where user is looking on the screen
+     \-[ ] Tools using just phone camera, Vs needing specialised hardware
+    
+    [ ] Libraries / Technologies
+
+
+Prototypes:
+    [ ] Language/Framework
+     |-[ ] Unity (C# Or Java)
+     |   Cross-platform, AR toolkit resources,
+     |-[ ] Xamarin (C#)
+     |   Cross-platform, Any AR tools?,
+     |-[ ] Web (TS+Angular)
+     |   Cross-platform, Possibly easier to test/deploy, CPU limited (I think), Deal with multiple browsers...
+     \-[ ] Android Developer Studio (Java)
+         Android only
+    
+    [ ] Scope
+     |-[ ] Head tracking approaches
+         Try different approaches, e.g. AR, IMU + Motion Correlation (+ Head extraction), ML tools for head tracking + IMU
+
+
+Research Questions:
+    [ ] - 

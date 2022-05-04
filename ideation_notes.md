@@ -54,6 +54,7 @@ Limitations with system?
     - Additionally when phone orbiting the user's face, no movement would be tracked, so either we don't accept that motion, or we infer from IMU, or we isolate user's face and perform motion correlation on background to determine movement?
         - Then do motion correlation on face to determine movement with respect to head?
 - Tracking face via FFC (use existing ML models to identify region with user's face, or even just haar cascade), then inferring relative position of phone to user's face.
+- AR methods (possibly using rear camera also)
 
 Is it worth comparing tracking just face pose w/r/t phone (existing approaches) Vs tracking phone pose w/r/t face?
 
