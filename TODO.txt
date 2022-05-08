@@ -1,12 +1,44 @@
 Lit review:
-    [ ] Head-Tracking
-     \-[ ] Tracking head vs phone - do any such tools exist, e.g. do existing tools care if user or phone is moving, or do they just care about relative positioning?
-    
-    [ ] Mobile Eye Tracking
-     |-[ ] Detection of user viewing screen, Vs where user is looking on the screen
-     \-[ ] Tools using just phone camera, Vs needing specialised hardware
-    
-    [ ] Libraries / Technologies
+    [ ] Thumb Reachability on Mobile Devices ???
+            Quick summary/review of using phone with modern screen sizes | Find References on any studies
+
+    [ ] Head Gestures / Control
+     |- Head gestures generally (not specific to mobile devices) | Find References
+     |  |- Head Gestures On Mobile Devices 
+     |  |- Head Controls With Mobile Devices | Already Have plenty of references
+     |     |- One-handed & Hands-Free interaction
+     |- Head Tracking Techniques (From Special hardware to camera only) | Find References
+     |- Types of Gesture (Semantic Vs Spatial) and Examples | Find References
+     
+    [ ] Adaptive Interfaces
+     |- 3D Interfaces (AR/VR) | Find References
+     |   |- Having additional content off-screen that can be accessed by changing perspective
+     |   |- Responsive to phone movement vs head movement | Find References
+     |- Context Aware UI | Find References
+        |- Reactive to user context to adjust on screen elements
+        |- Reactive to head/gaze?
+
+Intro:
+    [ ] Read paper on crafting an intro, take notes from other intros
+
+    [ ] Structure
+     |- Mobile devices, however SIIDs and Large Screens
+     |- Two different attempts to solve the problems
+        |- Additional Input Modalities
+        |  |- Thumb Gestures
+        |- Adaptive Interfaces
+           |- Context Aware UI
+           |- 3D Interfaces
+
+    [ ] Thumb Reachability 
+
+    # below are effectively avenues of potential solutions
+    [ ] Input modality attempts
+
+    [ ] specifically head gestures
+
+    [ ] adaptive UI
+
 
 
 Prototypes:

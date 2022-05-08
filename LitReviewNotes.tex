@@ -1,0 +1,241 @@
+%% Lit Review
+
+% Interaction With The Head
+% |- Devices Generally
+% |- Spacial Vs Semantic Vs Natural Input
+% |- Mobile devices
+%    |- One-handed interaction
+% 3D interfaces
+% |- Viewed on 2D screen
+% |- Reactive to user's head vs phone
+% Summary of Relationship between head and phone (how tracked/detected)
+
+% Related works
+% [ ] Thumb Reachability on Mobile Devices ???
+%       Quick summary/review of using phone with modern screen sizes | Find References on any studies
+%       just a paragraph or two to back-up claim in the intro, unless covered 
+
+% [ ] Head Gestures / Control
+%  |- Head gestures generally (not specific to mobile devices) | Find References
+%  |  |- Head Gestures On Mobile Devices 
+%  |  |- Head Controls With Mobile Devices | Already Have plenty of references
+%  |     |- One-handed & Hands-Free interaction
+%  |- Head Tracking Techniques (From Special hardware to camera only) | Find References
+%  |- Types of Gesture (Semantic Vs Spatial) and Examples | Find References
+  
+% [ ] Adaptive Interfaces
+%  |- 3D Interfaces (AR/VR) | Find References
+%  |   |- Having additional content off-screen that can be accessed by changing perspective
+%  |   |- Responsive to phone movement vs head movement | Find References
+%  |- Context Aware UI | Find References
+%     |- Reactive to user context to adjust on screen elements
+%     |- Reactive to head/gaze?
+
+
+% Look at https://faculty.washington.edu/wobbrock/pubs/Wobbrock-2015.pdf
+
+% Intro into the section?
+%   Need to describe what this will do, or just say discussing related works / further exploring works described in the intro?
+
+\subsection{Smartphone Usability}
+% Reachability, comfort, relationship to screensize, typical input modalities
+% Further review into why want to develop this system?
+
+\subsection{Head Gestures}
+% Examples of head gestures
+
+% Start with tracking that requires specific tech, e.g. AR / VR, or say TiltCap, require head-mounted/earable or special camera (IR)
+% Can start to refine to camera/webcam only, particularly ML based approaches and worth mentioning haar/harr cascades to identify faces quickly
+% Maybe mention motion correlation as way to track lateral movement of something
+
+% \subsubsection{Head Tracking Techniques} % Ideally explain tracking type in evaluation, e.g. needing additional hardware / software in the evaluation of the system, alongside the actual gestures
+
+\subsubsection{Mobile Device Head Interaction}
+% Section to discuss specific examples of Head gestures used with mobile devices (probs largest section as most relevant)
+% Ideally limited to using front-facing camera
+% Highlight issue of knowing if head Vs camera/phone is moving
+
+
+\subsubsection{Types of Gestures} % Before or after Mobile devices?
+From the head gesture systems reviewed above, we can classify them into 2 groups of gesture types.
+% reference:? Assuming they make statement and not just reference existing works?
+% https://researchportal.bath.ac.uk/en/publications/dynamic-motion-coupling-of-body-movement-for-input-control
+% @book{clarke2020dynamic,
+%   title={Dynamic motion coupling of body movement for input control},
+%   author={Clarke, Christopher},
+%   year={2020},
+%   publisher={Lancaster University (United Kingdom)}
+% }
+\begin{description}
+    \item[Spatial]  Gesture relates to referencing something, e.g. pointing (analog)
+    \item[Semantic] Gesture is like a word, a specific gesture performs a specific action (digital)
+\end{description}
+
+
+\subsection{Adaptive Interfaces}
+\subsection{Context Aware UI}
+% One way to improve usability is to have the UI elements adapt to the user context
+% based on:
+%   prior actions
+%   current area of focus (enlarging / moving elements to make easier for user to interact)
+%   user goals
+
+\subsubsection{3D Interfaces} % Projected to 2D display
+% An alternative to tabs/pages in applications, have application interface in 3D, and only expose based on perspective
+% Perspective based on phone vs user
+% Examples of AR/VR, display adapts
+
+
+
+
+%% QUOTES & NOTES %%
+
+
+Two points of interest:\\
+- Input modalities: to address limited reach of thumb\\
+- Adaptive Interfaces: To adjust visible elements / positioning of elements based on context\\
+
+% Would start with thumb gestures, but is this needed?
+% Can look to combine head movement with thumb?
+% Start with more cumbersome / excessive gestural techniques, refine towards thumb + head/gaze
+
+% Discuss determining if head vs phone is moving
+
+\subsection{Input Modalities}
+\subsubsection{Phone Gestures}
+% @inproceedings{ti2013tiltzoom,
+%   title={TiltZoom: tilt-based zooming control for easy one-handed mobile interactions},
+%   author={Ti, Jimmy and Tjondronegoro, Dian},
+%   booktitle={Australian Computer-Human Interaction Conference (24th)},
+%   pages={1--1},
+%   year={2013}
+% }
+Though limited in functionality, \pcite{ti2013tiltzoom} TiltZoom tool permits a user to adjust the level of zoom of a map via tilting the phone away (zoom-out) and towards (zoom-in) the user.\\
+This is due to typical zooming gestures requiring 2 digit input (e.g. pinching the display), which often requires two-handed interaction with the phone.
+
+Though apps such as google images and maps now support a double-tap and drag gesture to perform zoom operations, the usage of physical device rotation did show that it could be a usable and accessible user input.\\
+However one downside that was observed was a tiring of the wrist.
+
+% @inproceedings{chen2012extending,
+%   title={Extending a mobile device's interaction space through body-centric interaction},
+%   author={Chen, Xiang'Anthony' and Marquardt, Nicolai and Tang, Anthony and Boring, Sebastian and Greenberg, Saul},
+%   booktitle={Proceedings of the 14th international conference on Human-computer interaction with mobile devices and services},
+%   pages={151--160},
+%   year={2012}
+% }
+\cite{chen2012extending} took a different approach to phone-based gestures. Rather than developing a technique to convert the phone positioning/movement into an analog input, they instead looked to develop a system that used fixed / incremental input, that treated the phone position relative to the body as an action\\
+More akin to pressing max / min volume vs slowly incrementing the volume.\\
+Their system permits users to 'place' objects (such as urls, images, calender appointments) with respect to their body, which can then be retrieved at a later time.\\
+This could be interpreted as having a virtual space around the body, wherein the phone acts as a cursor to interact with elements within the space.
+
+\subsubsection{Head Gestures}
+Either tracking head / face to act as a pointer, or to be interpreted as a gesture.
+% Spacial and semantic input
+
+% @inproceedings{roig2015face,
+%   title={Face Me! Head-tracker interface evaluation on mobile devices},
+%   author={Roig-Maim{\'o}, Maria Francesca and Varona G{\'o}mez, Javier and Manresa-Yee, Cristina},
+%   booktitle={Proceedings of the 33rd Annual ACM Conference Extended Abstracts on Human Factors in Computing Systems},
+%   pages={1573--1578},
+%   year={2015}
+% }
+\cite{roig2015face} Using front faced camera to scroll, using the head angle w/r/t the device as direction of scrolling.\\
+
+
+% @article{onuki2016combined,
+%   title={Combined use of rear touch gestures and facial feature detection to achieve single-handed navigation of mobile devices},
+%   author={Onuki, Yoshikazu and Kumazawa, Itsuo},
+%   journal={IEEE Transactions on Human-Machine Systems},
+%   volume={46},
+%   number={5},
+%   pages={684--693},
+%   year={2016},
+%   publisher={IEEE}
+% }
+\cite{onuki2016combined} Using front facing camera to track user's head orientation (used to move a cursor), and the distance between the user's eyes to infer distance from the display, which in turn adjusts the coarseness of the cursor locations by effectively zooming in/out.
+
+% @inproceedings{voelker2020headreach,
+%   title={HeadReach: Using Head Tracking to Increase Reachability on Mobile Touch Devices},
+%   author={Voelker, Simon and Hueber, Sebastian and Corsten, Christian and Remy, Christian},
+%   booktitle={Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},
+%   pages={1--12},
+%   year={2020}
+% }
+\cite{voelker2020headreach} developed a tool to combine head orientation to move a cursor into a particular section of the screen, from which they can then use relative motion of the thumb to adjust the cursor to the element of interest.\\
+
+% @inproceedings{hueber2020headbang,
+%   title={Headbang: Using head gestures to trigger discrete actions on mobile devices},
+%   author={Hueber, Sebastian and Cherek, Christian and Wacker, Philipp and Borchers, Jan and Voelker, Simon},
+%   booktitle={22nd International Conference on Human-Computer Interaction with Mobile Devices and Services},
+%   pages={1--10},
+%   year={2020}
+% }
+This was then extended upon \citep{hueber2020headbang} to use the same tracking technology to instead perform gestures.\\
+Gestures were made simple based on the direction the user looked away, with actions effectively being placed within a disk, with each action getting an equally sized segment.\\
+Performing a gesture requires a user to remember the direction associated with the action they wish to perform.
+% Unclear if tested success using different number of segments
+
+Unsure if any of the above could determine if head or phone was being moved/rotated
+
+% @article{yan2018headgesture,
+%   title={Headgesture: hands-free input approach leveraging head movements for hmd devices},
+%   author={Yan, Yukang and Yu, Chun and Yi, Xin and Shi, Yuanchun},
+%   journal={Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies},
+%   volume={2},
+%   number={4},
+%   pages={1--23},
+%   year={2018},
+%   publisher={ACM New York, NY, USA}
+% }
+\cite{yan2018headgesture} also developed a system for performing gestures with the user's head, however they utilised more complicated gestures. Made for hands-free, rather than extending touch input.\\
+They determined the gesture movements via a study, resulting in 9 gestures/actions.\\
+Each action was to be a substitute for an existing gesture that could be performed with touch, such as tapping, scrolling, and zooming.\\
+Tracking was performed with hololens (not from phone).\\
+Was evaluated against Air-Tap, hololens extracting hand gestures.
+
+
+% @inproceedings{hansen2006use,
+%   title={Use your head: exploring face tracking for mobile interaction},
+%   author={Hansen, Thomas Riisgaard and Eriksson, Eva and Lykke-Olesen, Andreas},
+%   booktitle={CHI'06 Extended Abstracts on Human Factors in Computing Systems},
+%   pages={845--850},
+%   year={2006}
+% }
+% Basically what we were thinking of doing, bu without an adaptive interface...
+\cite{hansen2006use} Tool to use front-facing camera to track phone movement relative to user's face.
+They then use this input to evaluate 3 applications (image viewer, bluetooth connections, pong).\\
+They highlight that there is an issue with moving device vs tilting, camera FOV can reduce action-space, and that accessibility issues with moving the phone, making it harder to read.
+
+\subsubsection{Gaze / Eye Tracking}
+
+\subsection{Adaptive Interfaces / AR}
+\subsubsection{3D Display}
+% @inproceedings{buschel2017investigating,
+%   title={Investigating the use of spatial interaction for 3D data visualization on mobile devices},
+%   author={B{\"u}schel, Wolfgang and Reipschl{\"a}ger, Patrick and Langner, Ricardo and Dachselt, Raimund},
+%   booktitle={Proceedings of the 2017 ACM International Conference on Interactive Surfaces and Spaces},
+%   pages={62--71},
+%   year={2017}
+% }
+\cite{buschel2017investigating} Uses phone movement to adjust 3D content, primarily for data visualisation.
+
+% @inproceedings{francone2011using,
+%   title={Using the user's point of view for interaction on mobile devices},
+%   author={Francone, J{\'e}r{\'e}mie and Nigay, Laurence},
+%   booktitle={Proceedings of the 23rd Conference on l'Interaction Homme-Machine},
+%   pages={1--8},
+%   year={2011}
+% }
+\cite{francone2011using} developed a system to adjust 3d content onm the screen based on the user's perspective / orientation w/r/t the phone screen/front facing camera.
+
+\subsubsection{Adaptive}
+% @inproceedings{lopez2012head,
+%   title={Head-tracking virtual 3-D display for mobile devices},
+%   author={L{\'o}pez, Miguel Bordallo and Hannuksela, Jari and Silv{\'e}n, Olli and Fan, Lixin},
+%   booktitle={2012 IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops},
+%   pages={27--34},
+%   year={2012},
+%   organization={IEEE}
+% }
+Rather than having depth to the interface, \cite{lopez2012head} created a virtual display that is in the shape of a concave box, from which the visible part of the box is based on the user's perspective.\\
+
