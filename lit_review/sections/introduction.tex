@@ -1,0 +1,168 @@
+\section{Introduction}
+
+
+% What 
+% |- Will be developing and evaluating a system that permits the user to interact with their phone hands-free / one-handed
+%
+% Why
+% |- Situationally Induced Impairments and Disabilities (SIIDs)
+% |  | Scenarios where user is suffering some affliction induced by the environment they're operating within, and as such
+% |  |  they are either unable to or have less ability to perform a task using their phone
+% |
+% |- One-Handed use of a phone is common [Is this a valid statement?]
+% |  | For simple tasks, you don't need to use more than one input via the touch-screen (e.g. just thumb)
+% |  | Larger phone screen sizes impact usability of single-handed input (via thumb) [thumb reachability studies]
+% |  |- Phone/grip shifting
+% |- Issues of 1 handed usage (thumb reachability)
+
+
+% Look at https://faculty.washington.edu/wobbrock/pubs/Wobbrock-2015.pdf
+
+% Phone screens are getting larger
+%  screen usability goes down with screen-size, unless two-handed interaction is enforced, or device supported externally
+%  people prefer one-handed, even when not encumbered
+
+\cite{xuesheng2018research} Modern mobile device screens getting larger
+
+\cite{tsai2017testing} Review usability of touch-screens of different sizes
+
+\cite{le2018fingers} Study with 4 phones with increasing screen size, investigating the areas of the screen which are obtainable with each digit (Screen for thumb, phone back for fingers)\\
+As expected, larger screen sizes afforded less coverage for the thumb, in-particular reaching the upper parts of the screen, and in some-cases the side of the screen opposite to the thumb\\
+However this study did not ensure grip was consistent between participants, or that participants keep a constant grip. As such it isn't clear if some observed reachability is due to grip, hand-size, or adjusted grips.\\
+
+\cite{punchoojit2017usability} Usability of phone generally, touches on touch screens
+
+\cite{raptis2013does} Usability with respect to touch-screen
+
+\cite{williamson2011multimodal} evaluation of touch gestures on screen
+
+
+\cite{mackenzie2010eye} gaze is difficult
+% Gesture/interaction solutions
+% -Specific hardware
+% -Thumb gestures (overloading touch input)
+% Any study compare to touch or assess learnability?
+
+
+% Why use head as input
+%   One solution to the issue is to provide additional input modalities than just touch, such as using the head
+%   Why use head vs thumb, voice, Additional haptic / non-screen touch interactions
+
+% Why adapt interface to context
+%   Another solution is to adapt the interface to better suit the user's current context
+
+% We want to develop a system that adapts the interface based on user context, primarily driven by user perspective, and which supports the use of head gestures to aid in interaction with larger screens, one-handed or hands-free
+
+
+
+% Write Here
+
+
+
+
+% Research Question/s:
+% - Enhancing usability of HMDs through combination of Gaze Tracking, Head-Tracking/Gestures, and touch input
+% - Evaluating the usability of an interface for a HMD that takes input from Gaze Tracking, Head-Tracking/Gestures, and touch input.
+% - Evaluating an adaptive UI (for a HMD) which reacts to changes between relative positioning of the HMD and user's head
+% - Expand upon existing works which utilise head-tracking to enhance one-handed HMD interactions by distinguishing between head vs phone movement
+% ^ Outcome of the intro (i.e. have a discussion that builds-up to the question), or Intro inception (i.e. what we already want to do and then go on to explain / deconstruct)?
+% Actually list these?
+
+%% QUOTES & NOTES %%
+
+% @inproceedings{xuesheng2018research,
+%   title={Research on the Development Law of Smart Phone Screen based on User Experience},
+%   author={Xuesheng, Pei and Yang, Wang},
+%   booktitle={MATEC Web of Conferences},
+%   volume={176},
+%   pages={04006},
+%   year={2018},
+%   organization={EDP Sciences}
+% }
+\cite{xuesheng2018research} Modern mobile device screens 
+
+
+%% SIIDs
+% @article{yesiladaweb,
+%   title={Web Accessibility},
+%   author={Yesilada, Yeliz and Harper, Simon},
+%   publisher={Springer}
+% }
+described by \citeauthor{yesiladaweb} as "situations, contexts, or environments that negatively affect the abilities of people interacting with technology" (\citeyear{yesiladaweb})\\
+
+% @inproceedings{sarsenbayeva2017challenges,
+%   title={Challenges of situational impairments during interaction with mobile devices},
+%   author={Sarsenbayeva, Zhanna and van Berkel, Niels and Luo, Chu and Kostakos, Vassilis and Goncalves, Jorge},
+%   booktitle={Proceedings of the 29th Australian Conference on Computer-Human Interaction},
+%   pages={477--481},
+%   year={2017}
+% }
+\cite{sarsenbayeva2017challenges} suggest further defining Severely Constraining Situational Impairments” (SCSI), wherein the the ability to input to the device is restricted.\\
+
+% @article{karlson2006understanding,
+%   title={Understanding single-handed mobile device interaction},
+%   author={Karlson, Amy K and Bederson, Benjamin B and Contreras-Vidal, J},
+%   journal={Handbook of research on user interface design and evaluation for mobile technology},
+%   volume={1},
+%   pages={86--101},
+%   year={2006},
+%   publisher={National Research Council of Canada Institute for Information Technology Hershey}
+% }
+% Can possibly use as example that one-handed took off with touch-screens, and connects the SIID section with general one-handed use
+\cite{karlson2006understanding} undertook a couple studies to investigate both the support for one-handed use offered by mobile devices, and the scenarios wherein users would operate the device single handedly.\\
+From their field study (23 people) they observed a correlation between one-handed interaction and the user's movement. If the user was mobile or standing, they were much more likely to be using the phone one-handed as compared to when they were sat down.\\
+In their study of 135 people, they found that 66\% of participants preferred one-handed use, regardless of whether they were encumbered (e.g. suffering from SIID), resorting to two-handed use only when the interface requires it.\\
+
+%% One-handed usage
+% @article{hoober2013users,
+%   title={How do users really hold mobile devices},
+%   author={Hoober, Steven},
+%   journal={Uxmatters (http://www. uxmatter. com). Published: Feburary},
+%   volume={18},
+%   pages={2327--4662},
+%   year={2013}
+% }
+From a sample of 1334 observations (Unclear on number of people), \cite{hoober2013users} observed that 49\% of mobile device interaction was one-handed, with 36\% being one-handed with the second hand cradling the phone, and the last 15\% being two-handed (wherein both thumbs were in use).\\
+They go o0n to discuss the effective touch-screen reach the user can obtain with each method, and how users switch between these different modes based on adapting to completing different tasks (primarily if completing a task requires access to an unreachable part of the phone that they can't access in the current 'stance')\\
+% 2013 (9yrs old), still relevant enough? 
+
+% @misc{samsung2021onehand,
+%     title={Using One Handed Mode on my Samsung Phone},
+%     author={Samsung},
+%     year={2021},
+%     url={https://www.samsung.com/au/support/mobile-devices/using-one-handed-mode/},
+%     urldate = {2022/04/01}
+% }
+Given how prevalent one0handed use is, Samsung \citep{samsung2021onehand} (and other platforms?) have a dedicated one-handed mode, which effectively shrinks the screen towards the corner which has the most reach for the user's thumb.\\
+However this has the downside of shrinking the screen content, and reduces the accuracy of the thumb input (as where the thumb interacts with the screen is now effectively increased)\\
+% Should this be moved to lit review as this is an implementation, or can this be left here as a driving force, e.g. want to do better?
+
+%% Reachability
+% @inproceedings{le2018fingers,
+%   title={Fingers' Range and Comfortable Area for One-Handed Smartphone Interaction Beyond the Touchscreen},
+%   author={Le, Huy Viet and Mayer, Sven and Bader, Patrick and Henze, Niels},
+%   booktitle={Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems},
+%   pages={1--12},
+%   year={2018}
+% }
+Study with 4 phones with increasing screen size, investigating the areas of the screen which are obtainable with each digit (Screen for thumb, phone back for fingers)\\
+As expected, larger screen sizes afforded less coverage for the thumb, in-particular reaching the upper parts of the screen, and in some-cases the side of the screen opposite to the thumb\\
+However this study did not ensure grip was consistent between participants, or that participants keep a constant grip. As such it isn't clear if some observed reachability is due to grip, hand-size, or adjusted grips.\\
+
+% @article{choi2020effects,
+%   title={Effects of smartphone size and hand size on grip posture in one-handed hard key operations},
+%   author={Choi, Younggeun and Yang, Xiaopeng and Park, Jangwoon and Lee, Wonsup and You, Heecheon},
+%   journal={Applied Sciences},
+%   volume={10},
+%   number={23},
+%   pages={8374},
+%   year={2020},
+%   publisher={Multidisciplinary Digital Publishing Institute}
+% }
+% Possibly reference with regards to how larger phone afford particular grips, that may reduce reachability due to comfort (easy and comfortable to maintain grip) and security (believe won't drop phone)
+
+% Wanting to use the head, and why
+% Don't need to discuss particular examples, unless works want to build upon.
+% No extensive analysis/review, just highlighting reasons and can then perform review & analysis within the Lit Review
+
+% What are the research questions

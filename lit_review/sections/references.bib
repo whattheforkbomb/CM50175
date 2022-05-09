@@ -1,0 +1,503 @@
+
+% Journals
+
+% First the Full Name is given, then the abbreviation used in the AMS Math
+% Reviews, with an indication if it could not be found there.
+% Note the 2nd overwrites the 1st, so swap them if you want the full name.
+
+ %{AMS}
+ @String{AMSTrans = "American Mathematical Society Translations" }
+ @String{AMSTrans = "Amer. Math. Soc. Transl." }
+ @String{BullAMS = "Bulletin of the American Mathematical Society" }
+ @String{BullAMS = "Bull. Amer. Math. Soc." }
+ @String{ProcAMS = "Proceedings of the American Mathematical Society" }
+ @String{ProcAMS = "Proc. Amer. Math. Soc." }
+ @String{TransAMS = "Transactions of the American Mathematical Society" }
+ @String{TransAMS = "Trans. Amer. Math. Soc." }
+
+ %ACM
+ @String{CACM = "Communications of the {ACM}" }
+ @String{CACM = "Commun. {ACM}" }
+ @String{CompServ = "Comput. Surveys" }
+ @String{JACM = "J. ACM" }
+ @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
+ @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
+ @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
+
+ @String{AmerSocio = "American Journal of Sociology" }
+ @String{AmerStatAssoc = "Journal of the American Statistical Association" }
+ @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
+ @String{ApplMathComp = "Applied Mathematics and Computation" }
+ @String{ApplMathComp = "Appl. Math. Comput." }
+ @String{AmerMathMonthly = "American Mathematical Monthly" }
+ @String{AmerMathMonthly = "Amer. Math. Monthly" }
+ @String{BIT = "{BIT}" }
+ @String{BritStatPsych = "British Journal of Mathematical and Statistical
+          Psychology" }
+ @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
+ @String{CanMathBull = "Canadian Mathematical Bulletin" }
+ @String{CanMathBull = "Canad. Math. Bull." }
+ @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
+ @String{CompApplMath = "J. Comput. Appl. Math." }
+ @String{CompPhys = "Journal of Computational Physics" }
+ @String{CompPhys = "J. Comput. Phys." }
+ @String{CompStruct = "Computers and Structures" }
+ @String{CompStruct = "Comput. \& Structures" }
+ @String{CompJour = "The Computer Journal" }
+ @String{CompJour = "Comput. J." }
+ @String{CompSysSci = "Journal of Computer and System Sciences" }
+ @String{CompSysSci = "J. Comput. System Sci." }
+ @String{Computing = "Computing" }
+ @String{ContempMath = "Contemporary Mathematics" }
+ @String{ContempMath = "Contemp. Math." }
+ @String{Crelle = "Crelle's Journal" }
+ @String{GiornaleMath = "Giornale di Mathematiche" }
+ @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
+
+ %IEEE
+ @String{Computer = "{IEEE} Computer" }
+ @String{IEEETransComp = "{IEEE} Transactions on Computers" }
+ @String{IEEETransComp = "{IEEE} Trans. Comput." }
+ @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
+ @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
+ @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
+ @String{ProcIEEE = "Proceedings of the {IEEE}" }
+ @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
+ @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
+     Systems" }
+ @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
+
+ @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
+ @String{IMANumerAna = "{IMA} J. Numer. Anal." }
+ @String{InfProcLet = "Information Processing Letters" }
+ @String{InfProcLet = "Inform. Process. Lett." }
+ @String{InstMathApp = "Journal of the Institute of Mathematics and
+     its Applications" }
+ @String{InstMathApp = "J. Inst. Math. Appl." }
+ @String{IntControl = "International Journal of Control" }
+ @String{IntControl = "Internat. J. Control" }
+ @String{IntNumerEng = "International Journal for Numerical Methods in
+     Engineering" }
+ @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
+ @String{IntSuper = "International Journal of Supercomputing Applications" }
+ @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
+%% in AMS MR
+ @String{Kibernetika = "Kibernetika" }
+ @String{JResNatBurStand = "Journal of Research of the National Bureau
+     of Standards" }
+ @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
+ @String{LinAlgApp = "Linear Algebra and its Applications" }
+ @String{LinAlgApp = "Linear Algebra Appl." }
+ @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
+ @String{MathAnaAppl = "J. Math. Anal. Appl." }
+ @String{MathAnnalen = "Mathematische Annalen" }
+ @String{MathAnnalen = "Math. Ann." }
+ @String{MathPhys = "Journal of Mathematical Physics" }
+ @String{MathPhys = "J. Math. Phys." }
+ @String{MathComp = "Mathematics of Computation" }
+ @String{MathComp = "Math. Comp." }
+ @String{MathScand = "Mathematica Scandinavica" }
+ @String{MathScand = "Math. Scand." }
+ @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
+ @String{TablesAidsComp = "Math. Tables Aids Comput." }
+ @String{NumerMath = "Numerische Mathematik" }
+ @String{NumerMath = "Numer. Math." }
+ @String{PacificMath = "Pacific Journal of Mathematics" }
+ @String{PacificMath = "Pacific J. Math." }
+ @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
+ @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
+%% in AMS MR
+ @String{ParComputing = "Parallel Computing" }
+ @String{ParComputing = "Parallel Comput." }
+ @String{PhilMag = "Philosophical Magazine" }
+ @String{PhilMag = "Philos. Mag." }
+ @String{ProcNAS = "Proceedings of the National Academy of Sciences
+                    of the USA" }
+ @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
+ @String{Psychometrika = "Psychometrika" }
+ @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
+ @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
+ @String{QuartApplMath = "Quarterly of Applied Mathematics" }
+ @String{QuartApplMath = "Quart. Appl. Math." }
+ @String{RevueInstStat = "Review of the International Statisical Institute" }
+ @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
+
+ %SIAM
+ @String{JSIAM = "Journal of the Society for Industrial and Applied
+     Mathematics" }
+ @String{JSIAM = "J. Soc. Indust. Appl. Math." }
+ @String{JSIAMB = "Journal of the Society for Industrial and Applied
+     Mathematics, Series B, Numerical Analysis" }
+ @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
+ @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
+ @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
+ @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
+ @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
+ @String{SIAMComp = "{SIAM} Journal on Computing" }
+ @String{SIAMComp = "{SIAM} J. Comput." }
+ @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
+ @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
+ @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
+ @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
+ @String{SIAMReview = "{SIAM} Review" }
+ @String{SIAMReview = "{SIAM} Rev." }
+ @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
+     Computing" }
+ @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
+
+ @String{SoftPracExp = "Software Practice and Experience" }
+ @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
+ @String{StatScience = "Statistical Science" }
+ @String{StatScience = "Statist. Sci." }
+ @String{Techno = "Technometrics" }
+ @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
+     Physics" }
+ @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
+ @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
+ @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
+ @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
+     Mechanik" }
+ @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
+ @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
+ @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
+
+% Publishers % ================================================= |
+
+ @String{Academic = "Academic Press" }
+ @String{ACMPress = "{ACM} Press" }
+ @String{AdamHilger = "Adam Hilger" }
+ @String{AddisonWesley = "Addison-Wesley" }
+ @String{AllynBacon = "Allyn and Bacon" }
+ @String{AMS = "American Mathematical Society" }
+ @String{Birkhauser = "Birkha{\"u}ser" }
+ @String{CambridgePress = "Cambridge University Press" }
+ @String{Chelsea = "Chelsea" }
+ @String{ClaredonPress = "Claredon Press" }
+ @String{DoverPub = "Dover Publications" }
+ @String{Eyolles = "Eyolles" }
+ @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
+ @String{Interscience = "Interscience" }
+ @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
+ @String{JohnWileySons = "John Wiley and Sons" }
+ @String{Macmillan = "Macmillan" }
+ @String{MathWorks = "The Math Works Inc." }
+ @String{McGrawHill = "McGraw-Hill" }
+ @String{NatBurStd = "National Bureau of Standards" }
+ @String{NorthHolland = "North-Holland" }
+ @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
+ @String{PergamonPress = "Pergamon Press" }
+ @String{PlenumPress = "Plenum Press" }
+ @String{PrenticeHall = "Prentice-Hall" }
+ @String{SIAMPub = "{SIAM} Publications" }
+ @String{Springer = "Springer-Verlag" }
+ @String{TexasPress = "University of Texas Press" }
+ @String{VanNostrand = "Van Nostrand" }
+ @String{WHFreeman = "W. H. Freeman and Co." }
+
+% Entries
+
+%% gaze
+@inproceedings{mackenzie2010eye,
+  title={An eye on input: research challenges in using the eye for computer input control},
+  author={MacKenzie, I Scott},
+  booktitle={Proceedings of the 2010 Symposium on Eye-Tracking Research \& Applications},
+  pages={11--12},
+  year={2010}
+}
+
+%% Touch Screen Sizes / Usability 
+@article{tsai2017testing,
+  title={Testing the usability of smartphone surface gestures on different sizes of smartphones by different age groups of users},
+  author={Tsai, Tsai-Hsuan and Tseng, Kevin C and Chang, Yung-Sheng},
+  journal={Computers in Human Behavior},
+  volume={75},
+  pages={103--116},
+  year={2017},
+  publisher={Elsevier}
+}
+
+@inproceedings{le2018fingers,
+  title={Fingers' Range and Comfortable Area for One-Handed Smartphone Interaction Beyond the Touchscreen},
+  author={Le, Huy Viet and Mayer, Sven and Bader, Patrick and Henze, Niels},
+  booktitle={Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems},
+  pages={1--12},
+  year={2018}
+}
+
+@inproceedings{xuesheng2018research,
+  title={Research on the Development Law of Smart Phone Screen based on User Experience},
+  author={Xuesheng, Pei and Yang, Wang},
+  booktitle={MATEC Web of Conferences},
+  volume={176},
+  pages={04006},
+  year={2018},
+  organization={EDP Sciences}
+}
+
+@article{punchoojit2017usability,
+  title={Usability studies on mobile user interface design patterns: a systematic literature review},
+  author={Punchoojit, Lumpapun and Hongwarittorrn, Nuttanont},
+  journal={Advances in Human-Computer Interaction},
+  volume={2017},
+  year={2017},
+  publisher={Hindawi}
+}
+
+@inproceedings{raptis2013does,
+  title={Does size matter? investigating the impact of mobile phone screen size on users' perceived usability, effectiveness and efficiency.},
+  author={Raptis, Dimitrios and Tselios, Nikolaos and Kjeldskov, Jesper and Skov, Mikael B},
+  booktitle={Proceedings of the 15th international conference on Human-computer interaction with mobile devices and services},
+  pages={127--136},
+  year={2013}
+}
+
+@inproceedings{williamson2011multimodal,
+  title={Multimodal mobile interactions: usability studies in real world settings},
+  author={Williamson, Julie R and Crossan, Andrew and Brewster, Stephen},
+  booktitle={Proceedings of the 13th international conference on multimodal interfaces},
+  pages={361--368},
+  year={2011}
+}
+
+% Head Gestures - General
+%% Nose
+@article{gorodnichy2004nouse,
+  title={Nouse 'use your nose as a mouse' perceptual vision technology for hands-free games and interfaces},
+  author={Gorodnichy, Dmitry O and Roth, Gerhard},
+  journal={Image and Vision Computing},
+  volume={22},
+  number={12},
+  pages={931--942},
+  year={2004},
+  publisher={Elsevier}
+}
+
+@inproceedings{gorodnichy2002importance,
+  title={On importance of nose for face tracking},
+  author={Gorodnichy, Dmitry O},
+  booktitle={Proceedings of Fifth IEEE International Conference on Automatic Face Gesture Recognition},
+  pages={188--193},
+  year={2002},
+  organization={IEEE}
+}
+
+@article{varona2008hands,
+  title={Hands-free vision-based interface for computer accessibility},
+  author={Varona, Javier and Manresa-Yee, Cristina and Perales, Francisco J},
+  journal={Journal of Network and Computer Applications},
+  volume={31},
+  number={4},
+  pages={357--374},
+  year={2008},
+  publisher={Elsevier}
+}
+
+@inproceedings{shi1994good,
+  title={Good features to track},
+  author={Shi, Jianbo and others},
+  booktitle={1994 Proceedings of IEEE conference on computer vision and pattern recognition},
+  pages={593--600},
+  year={1994},
+  organization={IEEE}
+}
+
+% Flow
+@article{saikia2013head,
+  title={Head gesture recognition using optical flow based classification with reinforcement of GMM based background subtraction},
+  author={Saikia, Parimita and Das, Karen},
+  journal={arXiv preprint arXiv:1308.0890},
+  year={2013}
+}
+
+% IMU 
+@inproceedings{rudigkeit2015analytical,
+  title={An analytical approach for head gesture recognition with motion sensors},
+  author={Rudigkeit, Nina and Gebhard, Marion and Graser, Axel},
+  booktitle={2015 9th International Conference on Sensing Technology (ICST)},
+  pages={1--6},
+  year={2015},
+  organization={IEEE}
+}
+
+@article{jackowski2017head,
+  title={Head motion and head gesture-based robot control: A usability study},
+  author={Jackowski, Anja and Gebhard, Marion and Thietje, Roland},
+  journal={IEEE Transactions on Neural Systems and Rehabilitation Engineering},
+  volume={26},
+  number={1},
+  pages={161--170},
+  year={2017},
+  publisher={IEEE}
+}
+
+@article{hachaj2019evaluation,
+  title={Evaluation of pattern recognition methods for head gesture-based interface of a virtual reality helmet equipped with a single IMU sensor},
+  author={Hachaj, Tomasz and Piekarczyk, Marcin},
+  journal={Sensors},
+  volume={19},
+  number={24},
+  pages={5408},
+  year={2019},
+  publisher={Multidisciplinary Digital Publishing Institute}
+}
+
+@article{yan2018headgesture,
+  title={Headgesture: hands-free input approach leveraging head movements for hmd devices},
+  author={Yan, Yukang and Yu, Chun and Yi, Xin and Shi, Yuanchun},
+  journal={Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies},
+  volume={2},
+  number={4},
+  pages={1--23},
+  year={2018},
+  publisher={ACM New York, NY, USA}
+}
+
+% Mobile Device Head Interaction
+@inproceedings{roig2015face,
+  title={Face Me! Head-tracker interface evaluation on mobile devices},
+  author={Roig-Maim{\'o}, Maria Francesca and Varona G{\'o}mez, Javier and Manresa-Yee, Cristina},
+  booktitle={Proceedings of the 33rd Annual ACM Conference Extended Abstracts on Human Factors in Computing Systems},
+  pages={1573--1578},
+  year={2015}
+}
+
+@article{onuki2016combined,
+  title={Combined use of rear touch gestures and facial feature detection to achieve single-handed navigation of mobile devices},
+  author={Onuki, Yoshikazu and Kumazawa, Itsuo},
+  journal={IEEE Transactions on Human-Machine Systems},
+  volume={46},
+  number={5},
+  pages={684--693},
+  year={2016},
+  publisher={IEEE}
+}
+
+@inproceedings{voelker2020headreach,
+  title={HeadReach: Using Head Tracking to Increase Reachability on Mobile Touch Devices},
+  author={Voelker, Simon and Hueber, Sebastian and Corsten, Christian and Remy, Christian},
+  booktitle={Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems},
+  pages={1--12},
+  year={2020}
+}
+
+@inproceedings{hueber2020headbang,
+  title={Headbang: Using head gestures to trigger discrete actions on mobile devices},
+  author={Hueber, Sebastian and Cherek, Christian and Wacker, Philipp and Borchers, Jan and Voelker, Simon},
+  booktitle={22nd International Conference on Human-Computer Interaction with Mobile Devices and Services},
+  pages={1--10},
+  year={2020}
+}
+
+@inproceedings{hansen2006use,
+  title={Use your head: exploring face tracking for mobile interaction},
+  author={Hansen, Thomas Riisgaard and Eriksson, Eva and Lykke-Olesen, Andreas},
+  booktitle={CHI'06 Extended Abstracts on Human Factors in Computing Systems},
+  pages={845--850},
+  year={2006}
+}
+
+% Gesture Classification
+@phdthesis{clarke2020dynamic,
+    title = "Dynamic motion coupling of body movement for input control",
+    author = "Christopher Clarke",
+    year = "2020",
+    doi = "10.17635/lancaster/thesis/1015",
+    language = "English",
+    school = "Lancaster University",
+}
+
+@article{aigner2012understanding,
+  title={Understanding mid-air hand gestures: A study of human preferences in usage of gesture types for hci},
+  author={Aigner, Roland and Wigdor, Daniel and Benko, Hrvoje and Haller, Michael and Lindbauer, David and Ion, Alexandra and Zhao, Shengdong and Koh, JTKV},
+  journal={Microsoft Research TechReport MSR-TR-2012-111},
+  volume={2},
+  pages={30},
+  year={2012},
+  publisher={Citeseer}
+}
+
+
+% Adaptive UI
+% 3D
+@inproceedings{buschel2017investigating,
+  title={Investigating the use of spatial interaction for 3D data visualization on mobile devices},
+  author={B{\"u}schel, Wolfgang and Reipschl{\"a}ger, Patrick and Langner, Ricardo and Dachselt, Raimund},
+  booktitle={Proceedings of the 2017 ACM International Conference on Interactive Surfaces and Spaces},
+  pages={62--71},
+  year={2017}
+}
+
+@inproceedings{francone2011using,
+  title={Using the user's point of view for interaction on mobile devices},
+  author={Francone, J{\'e}r{\'e}mie and Nigay, Laurence},
+  booktitle={Proceedings of the 23rd Conference on l'Interaction Homme-Machine},
+  pages={1--8},
+  year={2011}
+}
+
+@article{miyazaki2021ar,
+  title={AR Peephole Interface: Extending the workspace of a mobile device using real-space information},
+  author={Miyazaki, Masashi and Komuro, Takashi},
+  journal={Pervasive and Mobile Computing},
+  volume={78},
+  pages={101489},
+  year={2021},
+  publisher={Elsevier}
+}
+
+% Context Aware UI
+@article{pfeuffer2021artention,
+  title={ARtention: A design space for gaze-adaptive user interfaces in augmented reality},
+  author={Pfeuffer, Ken and Abdrabou, Yasmeen and Esteves, Augusto and Rivu, Radiah and Abdelrahman, Yomna and Meitner, Stefanie and Saadi, Amr and Alt, Florian},
+  journal={Computers \& Graphics},
+  volume={95},
+  pages={1--12},
+  year={2021},
+  publisher={Elsevier}
+}
+
+@inproceedings{lopez2012head,
+  title={Head-tracking virtual 3-D display for mobile devices},
+  author={L{\'o}pez, Miguel Bordallo and Hannuksela, Jari and Silv{\'e}n, Olli and Fan, Lixin},
+  booktitle={2012 IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops},
+  pages={27--34},
+  year={2012},
+  organization={IEEE}
+}
+
+@inproceedings{wesson2010can,
+  title={Can adaptive interfaces improve the usability of mobile applications?},
+  author={Wesson, Janet L and Singh, Akash and Tonder, Bradley van},
+  booktitle={IFIP Human-Computer Interaction Symposium},
+  pages={187--198},
+  year={2010},
+  organization={Springer}
+}
+
+@inproceedings{yigitbas2019component,
+  title={Component-based development of adaptive user interfaces},
+  author={Yigitbas, Enes and Josifovska, Klementina and Jovanovikj, Ivan and Kalinci, Ferhat and Anjorin, Anthony and Engels, Gregor},
+  booktitle={Proceedings of the ACM SIGCHI Symposium on Engineering Interactive Computing Systems},
+  pages={1--7},
+  year={2019}
+}
+
+@article{yigitbas2019context,
+  title={Context-and data-driven satisfaction analysis of user interface adaptations based on instant user feedback},
+  author={Yigitbas, Enes and Hottung, Andr{\'e} and Rojas, Sebastian Mansfield and Anjorin, Anthony and Sauer, Stefan and Engels, Gregor},
+  journal={Proceedings of the ACM on Human-Computer Interaction},
+  volume={3},
+  number={EICS},
+  pages={1--20},
+  year={2019},
+  publisher={ACM New York, NY, USA}
+}
+
+@inproceedings{clarke2020reactive,
+  title={Reactive Video: Adaptive Video Playback Based on User Motion for Supporting Physical Activity},
+  author={Clarke, Christopher and Cavdir, Doga and Chiu, Patrick and Denoue, Laurent and Kimber, Don},
+  booktitle={Proceedings of the 33rd Annual ACM Symposium on User Interface Software and Technology},
+  pages={196--208},
+  year={2020}
+}

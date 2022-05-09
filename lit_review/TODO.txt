@@ -1,0 +1,25 @@
+[ ] Trello
+ |      For planning and time-management
+ |--[ ] Create Board
+ |   \--[ ] Create Tickets
+ |--[ ] Share Board
+ \--[ ]  Maintain/Update Board
+
+[ ] Literature Search
+ |      Have some papers already, but want to find more as I go
+
+
+[ ] Drafts
+ |--[ ] Introduction
+ |   |--[ ] Watch through "LEADERSHIP LAB: The Craft of Writing Effectively"
+ |   |--[ ] Update proposal based on latest discussions/direction
+ |   \--[ ] Tidy-up introduction
+ |      Should there be overlap regarding references and such between the intro and Lit. Review?
+ |--[ ] Literature Review
+ |   |--[ ] Add notes and snippets from references
+ |   |   \--[ ] Analyse and critique references, add own conclusions and comments
+ |   |--[ ] Structure notes into story
+ |   \--[ ] Tidy-up section, linking different sections smoothly, rather than just changing topics
+ \--[ ] Project Plan
+     |--[ ] Update plan with link to Trello
+     \--[ ] Tidy-up plan to be more informative (not just list with dates)

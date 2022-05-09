@@ -1,0 +1,35 @@
+\documentclass[sigconf,authordraft]{styling/acmart}
+%% NOTE that a single column version may required for 
+%% submission and peer review. This can be done by changing
+%% the \doucmentclass[...]{acmart} in this template to 
+%% \documentclass[manuscript,screen]{acmart}
+%% 
+%% To ensure 100% compatibility, please check the white list of
+%% approved LaTeX packages to be used with the Master Article Template at
+%% https://www.acm.org/publications/taps/whitelist-of-latex-packages 
+%% before creating your document. The white list page provides 
+%% information on how to submit additional LaTeX packages for 
+%% review and adoption.
+%% Fonts used in the template cannot be substituted; margin 
+%% adjustments are not allowed.
+
+\usepackage{styling/additional_dependencies} % Bring in all the includes and Latex Utils
+
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+\begin{document}
+    \input{sections/preamble}
+    \input{sections/introduction}
+    \input{sections/literature_review}
+    
+    \bibliographystyle{styling/bibliography/ACM-Reference-Format} % bath-harvard?
+    \bibliography{sections/references}
+    
+    \input{sections/appendix/appendix}
+
+\end{document}
+\endinput
